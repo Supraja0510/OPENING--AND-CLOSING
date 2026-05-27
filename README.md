@@ -29,8 +29,8 @@ Use Closing Operation
  
 ## Program:
 ```
-Developed by: RAHUL M R
-Reg.No: 2305003005
+Developed by: Supraja B
+Reg.No: 230502026
 ```
 
 ```python
@@ -55,10 +55,15 @@ plt.axis("off")
 ```
 
 ### Display the input Image:
+
 <img width="512" height="409" alt="image" src="https://github.com/user-attachments/assets/7fad6a1a-718a-49dd-a6fd-0ceb0412d56d" />
+
+
 <br>
+
 ```python
 # Step 3: Use Opening operation (erosion followed by dilation)
+
 opening_image = cv2.morphologyEx(image, cv2.MORPH_OPEN, kernel)
 
 image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
@@ -71,10 +76,15 @@ plt.axis("off")
 ```
 
 ### Display the result of Opening:
+
 <img width="519" height="410" alt="image" src="https://github.com/user-attachments/assets/eef4d418-daa5-4bf0-8e74-ed9f03b2f416" />
+
+
 <br>
+
 ```python
 # Step 4: Use Closing operation (dilation followed by erosion)
+
 closing_image = cv2.morphologyEx(image, cv2.MORPH_CLOSE, kernel)
 # Convert images from BGR to RGB for Matplotlib
 closing_image_rgb = cv2.cvtColor(closing_image, cv2.COLOR_BGR2RGB)
@@ -88,7 +98,11 @@ plt.show()
 
 ```
 ### Display the result of Closing:
+
+
 <img width="507" height="418" alt="image" src="https://github.com/user-attachments/assets/8ab0cf57-c87d-4e7f-96e8-0f6d3ef652d7" />
+
+
 <br>
 ## Result:
 Thus,the Opening and Closing operation is used in the image using python and OpenCV.
